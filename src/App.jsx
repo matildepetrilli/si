@@ -15,8 +15,9 @@ function App() {
     <BrowserRouter>
       <NetflixNavbar />
 <Routers>
-<FilmMain />
+
 </Routers>
+<FilmMain />
       <NetflixFooter />
     </BrowserRouter>
     </>

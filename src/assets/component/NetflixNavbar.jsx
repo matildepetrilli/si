@@ -1,5 +1,5 @@
 import { Container,Navbar,Nav } from "react-bootstrap";
-
+import{Link} from 'react-router-dom'
 const NetflixNavbar = function () {
   return (
     <div>
@@ -12,11 +12,13 @@ const NetflixNavbar = function () {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto ms-5">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">TV Show</Nav.Link>
-             <Nav.Link href="#link">Recently Added</Nav.Link>
-             <Nav.Link href="#link"> My List</Nav.Link>
-             <Nav.Link href="#link">TV Show</Nav.Link>
+             
+              
+              <Link to="/Home" ClassName="Nav.Link">Home</Link>
+              <Link to="/TvShow" ClassName="Nav.Link">TV Show</Link>
+              <Link to="/Recently Added" ClassName="Nav.Link">Recently Added</Link>
+              <Link to="/ My List" ClassName="Nav.Link"> My List</Link>
+            
             </Nav>
             <Nav className="flex align-items-center">
             <Nav.Link href="#home"> <i className="bi bi-search icons"></i></Nav.Link>
