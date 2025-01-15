@@ -7,13 +7,18 @@ import NetflixNavbar from "./assets/component/NetflixNavbar";
 import "./assets/component/Netflix.css";
 import NetflixFooter from "./assets/component/NetflixFooter";
 import FilmMain from "./assets/component/FilmMain";
+import { BrowserRouter,Routers,Route } from "react-router-dom";
 
 function App() {
   return (
     <>
+    <BrowserRouter>
       <NetflixNavbar />
-      <FilmMain />
+<Routers>
+<FilmMain />
+</Routers>
       <NetflixFooter />
+    </BrowserRouter>
     </>
   );
 }
